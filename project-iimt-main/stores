@@ -1,0 +1,40 @@
+// const translations = [
+//     { lang: 'English', text: 'Aim For Excellence' },
+//     { lang: 'Hindi', text: 'श्रेष्ठता का लक्ष्य' },
+//     { lang: 'Bengali', text: 'উৎকর্ষের লক্ষ্যে' },
+//     { lang: 'Kannada', text: 'ಮೇಲುಮಾಡಲು ಕಾಯಕ' },
+//     { lang: 'Tamil', text: 'மிகச்சிறந்ததை நோக்கி' },
+//     { lang: 'Telugu', text: 'ఉత్కృష్టత లక్ష్యం' },
+//     { lang: 'Marathi', text: 'उत्कृष्टतेसाठी लक्ष्य' },
+//     { lang: 'Gujarati', text: 'ઉત્કૃષ્ટતા માટે ધ્યેય' },
+//     { lang: 'Malayalam', text: 'മികവിന്റെ ലക്ഷ്യം' },
+//     { lang: 'Punjabi', text: 'ਉਤਕ੍ਰਿਸ਼ਟਤਾ ਲਈ ਲਕਸ਼' },
+//     { lang: 'Odia', text: 'ଉତ୍କୃଷ୍ଟତା ପାଇଁ ଲକ୍ଷ୍ୟ' },
+//     { lang: 'Sanskrit', text: 'उत्कर्षाय लक्ष्य' },
+//     { lang: 'Assamese', text: 'শ্ৰেষ্ঠত্বৰ লক্ষ্য' },
+//     { lang: 'Urdu', text: 'کمال کا مقصد' },
+//   ];
+  
+  
+//   // Target the h2 element correctly
+//   const loaderText = document.querySelector('.loader h2');
+  
+//   // GSAP timeline to change the language
+//   const tl = gsap.timeline();
+  
+//   translations.forEach((translation) => {
+//     tl.to(loaderText, {
+//       duration: .4,
+//       opacity: 0,
+//       onComplete: () => {
+//         loaderText.textContent = translation.text;
+//       }
+//     },'same')
+//     tl.to(loaderText, { duration: .2, opacity: 1 });
+//   },'same')
+  
+//   tl.from('.wait h3',{
+//     opacity:0,
+//     duration: 1,
+//     delay: .3,
+//   },'same')
