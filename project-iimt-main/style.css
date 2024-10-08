@@ -712,8 +712,8 @@ nav {
   z-index: 999 !important;
   pointer-events: none;
 }
-/* .page4 {
+.page4 {
   min-height: 100vh;
   width: 100%;
-  background-color: #dadada;
-} */
+  background-color: #302D2D;
+}
