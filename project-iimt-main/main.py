@@ -22,6 +22,9 @@ def create_connection():
 @app.route('/')
 def serve_index():
     return send_from_directory(base_directory, 'index.htm')
+@app.route('/courses')
+def serve_course_page():
+    return send_from_directory(base_directory, 'courses.htm')
 @app.route('/assets/<path:filename>')
 def serve_assets(filename):
     assets_directory = os.path.join(base_directory, 'assets')
