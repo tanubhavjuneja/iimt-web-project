@@ -537,19 +537,19 @@ nav {
   border-radius: 5px;
   background: #333;
 }
-.right-img {
+.container1{
   margin-top: 4vw;
   position: relative;
   height: 24vw;
   width: 20vw;
 }
-.right-img img {
+.container1 img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
-.box {
+.box1 {
   top: 80%;
   right: 90%;
   height: 25vw;
@@ -558,7 +558,7 @@ nav {
   position: absolute;
   padding: 2vw;
 }
-.box h4 {
+.box1 h4 {
   color: #fff;
   border-bottom: 2px solid #aba7a7;
   font-size: 1.6vw;
@@ -621,6 +621,35 @@ nav {
   border-radius: 5px;
   background: #333;
 }
+.container2{
+  margin-top: 4vw;
+  position: relative;
+  height: 24vw;
+  width: 20vw;
+}
+.container2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.box2 {
+  top: 80%;
+  right: 90%;
+  height: 25vw;
+  width: 20vw;
+  background-color: #383636;
+  position: absolute;
+  padding: 2vw;
+}
+.box2 h4 {
+  color: #fff;
+  border-bottom: 2px solid #aba7a7;
+  font-size: 1.6vw;
+  font-family: "helregular";
+  font-weight: 100;
+  margin-bottom: 1.8vw;
+}
 .section4 {
   padding: 0vw 4vw;
   flex-shrink: 0;
@@ -682,19 +711,19 @@ nav {
   border-radius: 5px;
   background: #333;
 }
-.right-img {
+.container3{
   margin-top: 4vw;
   position: relative;
   height: 24vw;
   width: 20vw;
 }
-.right-img img {
+.container3 img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
-.box {
+.box3 {
   top: 80%;
   right: 90%;
   height: 25vw;
@@ -703,7 +732,7 @@ nav {
   position: absolute;
   padding: 2vw;
 }
-.box .dif {
+.dif, .box3 h4 {
   color: #fff;
   border-bottom: 2px solid #aba7a7;
   font-size: 1.6vw;
@@ -1095,6 +1124,35 @@ footer p {
 }
 
 @media (max-width: 600px) {
+  .mousefollower{
+      display: none;
+    }
+  .loader {
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    background: #d9d9d9;
+  }
+  .loader h2 {
+    position: relative;
+    font-family: "helRegular";
+    font-size: 6.6vw;
+    color: #302d2d;
+  }
+  .wait {
+    position: absolute;
+    bottom: 10vw;
+    left: 20vw;
+  }
+  .wait h3 {
+    font-family: "helRegular";
+    font-size: 4.6vw;
+  }
   .page1 {
     position: relative;
     height: 100vh;
@@ -1288,7 +1346,7 @@ footer p {
 
   .page2 {
     padding: 0vw 2vw;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     background-color: #302d2d;
     color: rgb(86, 79, 79);
@@ -1335,10 +1393,10 @@ footer p {
     align-items: center;
     font-family: "silk";
     font-weight: 100;
-    margin-top: -12vh;
+    margin-top: -9vh;
   }
   .center-part {
-    margin-top: -3vh;
+    margin-top: 1vh;
     height: 20vh;
     width: 100%;
     display: flex;
@@ -1359,7 +1417,7 @@ footer p {
     margin-left: 0vw;
   }
   .last-part {
-    margin-top: -14%;
+    margin-top: -10%;
     flex-direction: column-reverse;
     height: 30vh;
     width: 100%;
@@ -1382,7 +1440,7 @@ footer p {
     margin-right: 0vw;
   }
   .last-part h4 {
-    margin-top: 1vw;
+    margin-top: 6vw;
     position: relative;
     font-size: 9vw;
     font-weight: 100;
@@ -1423,17 +1481,10 @@ footer p {
   }
   .section1 h2 {
     font-family: "machina";
-    font-size: 8vw;
+    font-size: 8.6vw;
   }
   .ques {
-    margin-bottom: 20%;
-    flex-direction: column;
-    height: 50vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: red;
-    width: 100%;
+    display: none !important;
   }
   .ques h4:nth-child(1) {
     opacity: 0.6;
@@ -1459,21 +1510,14 @@ footer p {
     margin-right: 0vw;
   }
   .ques2 {
-    margin-top: 20%;
-    height: 50vw;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background-color: red; */
-    width: 100%;
+    display: none;
   }
   .ques2 h4:nth-child(1) {
     opacity: 0.6;
     font-weight: 100;
     font-family: "gilSemi";
-    font-size: 8vw;
-    margin-left: -24vw;
+    font-size: 6vw;
+    margin-left: -32vw;
     margin-top: 0vw;
   }
   .ques2 h4:nth-child(2) {
@@ -1481,37 +1525,41 @@ footer p {
     font-weight: 100;
     font-family: "silk";
     font-size: 8vw;
+    margin-left: 12vw;
     margin-top: 0vw;
   }
   .ques2 h4:nth-child(3) {
     opacity: 0.8;
     font-weight: 100;
+    /* font-style: italic; */
     font-family: "machina";
-    font-size: 8vw;
+    font-size: 6vw;
     margin-top: 0vw;
-    margin-right: 24vw;
+    margin-left: 36vw;
   }
   .section2 {
-    padding: 0vw 4vw;
+    padding: 0vw 2.8vw;
     flex-shrink: 0;
     height: 100vh;
     width: 100%; /* Each section takes full viewport width */
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-direction: column;
     background-color: #d9d9d9;
   }
   .scholarship {
     margin-top: 8vw;
     padding: 4vw;
     /* background-color: rebeccapurple; */
-    width: 45%;
+    width: 92%;
   }
   .scholarship h3 {
+    white-space: nowrap;
     position: relative;
     font-family: "gilSemi";
     font-weight: 100;
-    font-size: 3vw;
+    font-size: 6.8vw;
     content: fit-content;
     color: #000000;
   }
@@ -1519,7 +1567,7 @@ footer p {
     content: "01";
     font-family: "silk";
     font-weight: 100;
-    font-size: 3.6vw;
+    font-size: 6vw;
     position: absolute;
     margin-left: 2%;
     margin-top: -5%;
@@ -1527,53 +1575,55 @@ footer p {
   }
   .scholarship .line {
     margin-top: 0.1vw;
-    width: 50%;
+    width: 48%;
     height: 1px;
     background-color: rgba(53, 50, 50, 0.744);
   }
   .scholarship p {
-    padding-top: 1.6vw;
+    width: 100%;
+    padding-top: 4vw;
     font-family: "gilreg";
     font-weight: 100;
-    font-size: 1.4vw;
+    font-size: 3.2vw;
   }
   .scholarship button {
     margin-top: 2vw;
-    padding: 0.4vw 1vw;
+    padding: 1.6vw 1.8vw;
     color: #ffff;
-    font-size: 1.2vw;
+    font-size: 4vw;
     font-family: "machina";
     border-radius: 5px;
     background: #333;
   }
-  .right-img {
-    margin-top: 4vw;
+  .container1{
+    margin-left: 6vw;
+    margin-top: 0vw;
     position: relative;
-    height: 24vw;
-    width: 20vw;
+    height: 56vw;
+    width: 54vw;
   }
-  .right-img img {
+  .container1 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
   }
-  .box {
-    top: 80%;
-    right: 90%;
-    height: 25vw;
-    width: 20vw;
+  .box1 {
+    top: 98%;
+    left: 0%;
+    height: 60vw;
+    width: 54vw;
     background-color: #383636;
     position: absolute;
-    padding: 2vw;
+    padding: 3.2vw;
   }
-  .box h4 {
+  .box1 h4 {
     color: #fff;
     border-bottom: 2px solid #aba7a7;
-    font-size: 1.6vw;
+    font-size: 5vw;
     font-family: "helregular";
     font-weight: 100;
-    margin-bottom: 1.8vw;
+    margin-bottom: 4vw;
   }
   .section3 {
     padding: 0vw 4vw;
@@ -1582,20 +1632,22 @@ footer p {
     width: 100%; /* Each section takes full viewport width */
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-direction: column;
     background-color: #d9d9d9;
   }
   .Infrastructure {
     margin-top: 8vw;
     padding: 4vw;
     /* background-color: rebeccapurple; */
-    width: 45%;
+    width: 92%;
   }
   .Infrastructure h3 {
+    white-space: nowrap;
     position: relative;
     font-family: "gilSemi";
     font-weight: 100;
-    font-size: 3vw;
+    font-size: 6.8vw;
     content: fit-content;
     color: #000000;
   }
@@ -1603,7 +1655,7 @@ footer p {
     content: "02";
     font-family: "silk";
     font-weight: 100;
-    font-size: 3.6vw;
+    font-size: 6vw;
     position: absolute;
     margin-left: 2%;
     margin-top: -5%;
@@ -1611,46 +1663,78 @@ footer p {
   }
   .Infrastructure .line {
     margin-top: 0.1vw;
-    width: 60%;
+    width: 54%;
     height: 1px;
     background-color: rgba(53, 50, 50, 0.744);
   }
   .Infrastructure p {
-    padding-top: 1.6vw;
+    width: 100%;
+    padding-top: 4vw;
     font-family: "gilreg";
     font-weight: 100;
-    font-size: 1.4vw;
+    font-size: 3.4vw;
   }
   .Infrastructure button {
-    margin-top: 2vw;
-    padding: 0.4vw 1vw;
+    margin-top: 2.2vw;
+    padding: 1.6vw 1.8vw;
     color: #ffff;
-    font-size: 1.2vw;
+    font-size: 4vw;
     font-family: "machina";
     border-radius: 5px;
     background: #333;
   }
+  .container2{
+    margin-left: 6vw;
+    margin-top: 0vw;
+    position: relative;
+    height: 56vw;
+    width: 54vw;
+  }
+  .container2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .box2 {
+    top: 98%;
+    left: 0%;
+    height: 66vw;
+    width: 54vw;
+    background-color: #383636;
+    position: absolute;
+    padding: 3.2vw;
+  }
+  .box2 h4 {
+    color: #fff;
+    border-bottom: 2px solid #aba7a7;
+    font-size: 4.2vw;
+    font-family: "helregular";
+    font-weight: 100;
+    margin-bottom: 4vw;
+  }
   .section4 {
-    padding: 0vw 4vw;
+    padding: 0vw 2.8vw;
     flex-shrink: 0;
     height: 100vh;
     width: 100%; /* Each section takes full viewport width */
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-direction: column;
     background-color: #d9d9d9;
   }
   .Rank {
     margin-top: 8vw;
     padding: 4vw;
     /* background-color: rebeccapurple; */
-    width: 45%;
+    width: 100%;
   }
   .Rank h3 {
     position: relative;
     font-family: "gilSemi";
     font-weight: 100;
-    font-size: 3vw;
+    font-size: 6vw;
     content: fit-content;
     color: #000000;
   }
@@ -1658,7 +1742,7 @@ footer p {
     content: "03";
     font-family: "silk";
     font-weight: 100;
-    font-size: 3.6vw;
+    font-size: 6vw;
     position: absolute;
     margin-left: 2%;
     margin-top: -5%;
@@ -1666,58 +1750,61 @@ footer p {
   }
   .Rank .line {
     margin-top: 0.1vw;
-    width: 38%;
+    width: 30%;
     height: 1px;
     background-color: rgba(53, 50, 50, 0.744);
   }
   .Rank p {
-    padding-top: 1.6vw;
+    padding-top: 6vw;
     font-family: "gilreg";
     font-weight: 100;
-    font-size: 1.4vw;
+    font-size: 3.2vw;
   }
   .Rank span {
     padding-top: 1.6vw;
     font-family: "helMedium";
     font-weight: bolder;
-    font-size: 1.7vw;
+    font-size: 3.2vw;
   }
   .Rank button {
     margin-top: 2vw;
-    padding: 0.4vw 1vw;
+    padding: 1.6vw 1.8vw;
     color: #ffff;
-    font-size: 1.2vw;
+    font-size: 4vw;
     font-family: "machina";
     border-radius: 5px;
     background: #333;
   }
-  .right-img {
-    margin-top: 4vw;
+  .container3{
+    margin-left: 6vw;
+    margin-top: 14vw;
     position: relative;
-    height: 24vw;
-    width: 20vw;
+    height: 56vw;
+    width: 54vw;
   }
-  .right-img img {
+  .container3 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
   }
-  .box {
-    top: 80%;
-    right: 90%;
-    height: 25vw;
-    width: 20vw;
+  .box3 {
+    top: 98%;
+    left: 0%;
+    height: 60vw;
+    width: 54vw;
     background-color: #383636;
     position: absolute;
-    padding: 2vw;
+    padding: 3.2vw;
   }
-  .box .dif {
+  .dif, .box3 h4 {
+    margin-top: 4vw;
     color: #fff;
     border-bottom: 2px solid #aba7a7;
-    font-size: 1.6vw;
+    font-size: 4.1vw;
     font-family: "helregular";
     font-weight: 100;
-    margin-bottom: 3vw;
+    margin-bottom: 6vw;
   }
+
 }
