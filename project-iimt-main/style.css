@@ -3582,5 +3582,53 @@ footer p {
     font-weight: 100;
     margin-bottom: 6vw;
   }
+  .page4 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #302d2d;
+  }
+  .image-content{
+    margin-top: 10vh;
+  }
+  .circle1-div{
+    margin-top: 19vh;
+  }
+  .circle2-div{
+    margin-top: 12vh;
+  }
+  .circle3-div{
+    margin-top: 12vh;
+  }
+  .footer-div{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #302d2d;
+  }
+  .subscribe-section h1{
+    margin-top: -10vw;
+    font-size: 6vw;
+  }
+  .subscribe-section p{
+    margin-top: -10vw;
+  }
+  .address-section p{
+    margin-top: 1vw;
+  }
+  .footer-contact p:nth-child(4){
+    display: none;
+  }
+  .footer-contact p{
+    font-size: 3.2vw;
+    margin-top: -14vw;
+   
+  }
+  .footer-right iframe{
+    height: 40vh;
+    width: 90vw;
+  }
+}
+
 
 }
