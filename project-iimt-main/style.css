@@ -1846,59 +1846,69 @@ body {
   overflow: hidden;
 }
 .popup {
-  display: none; 
-  position: fixed; 
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%;
-  overflow: auto; 
-  background-color: rgb(0, 0, 0); 
-  background-color: rgba(0, 0, 0, 0.4); 
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 100vh;
+    max-height: 90vh;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
+
 .popup-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
+
 .form-group {
-  margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
+
 .form-group label {
-  display: block;
-  margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px;
 }
+
 .form-group input {
-  width: 100%;
-  padding: 8px; 
-  box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
 }
+
 .popup-content {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 500px;
-  width: 100%;
-  position: relative;
-  text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 950px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
 }
+
 .popup-content h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
+
 .close-popup {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 24px;
-  cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
 }
 .mousefollower {
   background-color: transparent;
@@ -3572,5 +3582,53 @@ footer p {
     font-weight: 100;
     margin-bottom: 6vw;
   }
+  .page4 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #302d2d;
+  }
+  .image-content{
+    margin-top: 10vh;
+  }
+  .circle1-div{
+    margin-top: 19vh;
+  }
+  .circle2-div{
+    margin-top: 12vh;
+  }
+  .circle3-div{
+    margin-top: 12vh;
+  }
+  .footer-div{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #302d2d;
+  }
+  .subscribe-section h1{
+    margin-top: -10vw;
+    font-size: 6vw;
+  }
+  .subscribe-section p{
+    margin-top: -10vw;
+  }
+  .address-section p{
+    margin-top: 1vw;
+  }
+  .footer-contact p:nth-child(4){
+    display: none;
+  }
+  .footer-contact p{
+    font-size: 3.2vw;
+    margin-top: -14vw;
+   
+  }
+  .footer-right iframe{
+    height: 40vh;
+    width: 90vw;
+  }
+}
+
 
 }
