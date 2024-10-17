@@ -331,3 +331,4 @@ textSplitting();
 scroll();
 wiggleEffect();
 gooeyEffect();
+
