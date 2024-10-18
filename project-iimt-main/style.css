@@ -57,8 +57,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 93vw;
+  height: 97vh;
   background: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
@@ -83,8 +83,8 @@ body {
 .popup-content {
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
-  border-radius: 10px;
-  max-width: 950px;
+  border-radius: 7px;
+  max-width: 1000px;
   width: 100%;
   height: auto;
   position: relative;
@@ -2056,5 +2056,6 @@ footer p {
   .footer-right iframe {
     height: 40vh;
     width: 90vw;
+     padding-bottom: 3vw;
   }
 }
