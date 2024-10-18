@@ -3773,6 +3773,9 @@ footer p {
     line-height: 1;
   }
   .footer-right iframe {
+    margin-top: 4vw;
+    padding: 0vw;
+    padding-bottom: 10vw;
     height: 40vh;
     width: 90vw;
   }
