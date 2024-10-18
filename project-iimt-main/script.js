@@ -343,7 +343,7 @@ function SideMenubar() {
     duration: 0.5,
   });
   tl.from(".sideslide h4", {
-    x: 100,
+    y: 100,
     duration: 0.4,
     stagger: 0.2,
     opacity: 0,

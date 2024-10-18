@@ -1241,27 +1241,27 @@ footer p {
     display: block;
   }
   .sideslide {
-    font-family: bull;
+    font-family: "machina";
     z-index: 99;
     padding: 6vw;
     position: absolute;
     top: 0;
-    right: -40%;
-    height: 100vh;
-    width: 40%;
-    background-color: #f9f3eb;
+    right: -100%;
+    height: 60vh;
+    width: 100%;
+    background-color: #3e3e3c9a;
   }
   
   .sideslide h4 {
-    font-size: 5vw;
+    font-size: 8vw;
     margin-bottom: 15px;
-    color: #333;
+    color: #fff;
   }
   
   .sideslide i {
-    color: #333;
+    color: #ffffff;
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 4vw;
     /* background-color: #333; */
     padding: 2px;
     top: 4%;
