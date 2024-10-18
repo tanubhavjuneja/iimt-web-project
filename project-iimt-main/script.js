@@ -324,6 +324,41 @@ const gooeyEffect =() => {
     gooey: true,
   });
 }
+function SideMenubar() {
+  var menu = document.querySelector(".menuicon");
+  var cross = document.querySelector(".sideslide i");
+  var tl = gsap.timeline();
+
+  // Animate the menu sliding from the top
+  tl.to(".sideslide", {
+    top: 0,  // Slide down from top
+    duration: .4,
+  });
+  
+  tl.from(".sideslide h4", {
+    y: 50,  // Animate from slightly below for the headings
+    delay:.4,
+    duration: 0.2,
+    stagger: 0.2,
+    opacity: 0,
+  });
+  
+  tl.from(".sideslide i", {
+    opacity: 0,
+    duration: 0.4,
+  });
+  
+  tl.pause();
+
+  menu.addEventListener("click", function () {
+    tl.play();  // Slide down on menu click
+  });
+  
+  cross.addEventListener("click", function () {
+    tl.reverse();  // Slide back up when clicking the close button
+  });
+}
+
 locomotive();
 loaderPlay();
 customCursor();
@@ -332,33 +367,3 @@ scroll();
 wiggleEffect();
 gooeyEffect();
 SideMenubar();
-
-function SideMenubar() {
-  var menu = document.querySelector(".menuicon");
-  var cross = document.querySelector(".sideslide i");
-  var tl = gsap.timeline();
-
-  tl.to(".sideslide", {
-    right: 0,
-    duration: 0.5,
-  });
-  tl.from(".sideslide h4", {
-    y: 100,
-    duration: 0.4,
-    stagger: 0.2,
-    opacity: 0,
-  });
-  tl.from(".sideslide i", {
-    opacity: 0,
-    duration: 0.6,
-    rotate: "360deg",
-  });
-  tl.pause();
-
-  menu.addEventListener("click", function () {
-    tl.play();
-  });
-  cross.addEventListener("click", function () {
-    tl.reverse();
-  });
-}
