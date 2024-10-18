@@ -35,6 +35,7 @@ body {
   width: 100%;
 }
 .main {
+  background-color: #302d2d;
   overflow: hidden;
 }
 .mousefollower {
@@ -3150,7 +3151,7 @@ footer p {
     position: relative;
     font-size: 14vw;
     font-family: "silk";
-    margin-top: 0vw;
+    margin-top: 10vw;
     margin-right: 0vw;
   }
   .first-part h4::before {
@@ -3172,7 +3173,7 @@ footer p {
     margin-top: -9vh;
   }
   .center-part {
-    margin-top: 1vh;
+    margin-top: -2.8vh;
     height: 20vh;
     width: 100%;
     display: flex;
@@ -3193,8 +3194,8 @@ footer p {
     margin-left: 0vw;
   }
   .last-part {
-    margin-top: -10%;
-    flex-direction: column-reverse;
+    margin-top: -25%;
+    flex-direction: column;
     height: 30vh;
     width: 100%;
     position: relative;
@@ -3209,8 +3210,9 @@ footer p {
     width: 14vw;
   }
   .last-part .img2-lp {
+    border-radius: 10px;
     height: 100%;
-    width: 100%;
+    width: 98%;
     object-fit: cover;
     margin-bottom: 0vw;
     margin-right: 0vw;
@@ -3656,28 +3658,31 @@ footer p {
    display: none;
   }
   .footer-div{
+    margin-top: 10vw;
     height: 100vh;
     width: 100%;
     position: relative;
-    background-color: #302d2d;
+    /* background-color: red; */
+    /* background-color: #302d2d; */
   }
   
   .subscribe-section h1{
     margin-top: -10vw;
-    font-size: 6vw;
+    font-size: 8vw;
   }
   .subscribe-section p{
     margin-top: -10vw;
   }
   .address-section p{
-    margin-top: 1vw;
+    margin-top: 1.4vw;
   }
   .footer-contact p:nth-child(4){
     display: none;
   }
   .footer-contact p{
+    white-space: nowrap;
     font-size: 3.2vw;
-    margin-top: -14vw;
+    margin-top: -12vw;
     line-height: 1;
    
   }
