@@ -229,7 +229,10 @@ const loaderPlay = () => {
     y: "15%",
     duration: .2,
     opacity: 0,
-  });
+    onStart: function enableScroll() {
+      window.onscroll = function() {};  // Re-enable scrolling
+    }
+  });  
 };
 function customCursor() {
   Shery.mouseFollower({
@@ -364,7 +367,19 @@ function SideMenubar() {
     });
   });
 }
+function disableScroll() {
+  // Get the current page scroll position
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollLeft =
+    window.pageXOffset || document.documentElement.scrollLeft;
 
+  // if any scroll is attempted, set this to the previous value
+  window.onscroll = function () {
+    window.scrollTo(scrollLeft, scrollTop);
+  };
+}
+
+disableScroll();
 locomotive();
 loaderPlay();
 customCursor();
