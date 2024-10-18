@@ -2056,5 +2056,6 @@ footer p {
   .footer-right iframe {
     height: 40vh;
     width: 90vw;
+     padding-bottom: 3vw;
   }
 }
