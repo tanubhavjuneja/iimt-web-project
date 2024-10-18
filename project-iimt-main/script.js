@@ -329,15 +329,18 @@ function SideMenubar() {
   var cross = document.querySelector(".sideslide i");
   var tl = gsap.timeline();
 
-  // Animate the menu sliding from the top
   tl.to(".sideslide", {
-    top: 0,  // Slide down from top
+    top: 0, 
     duration: .4,
+    onStart: function() {
+      // Disable scrolling when the menu is open
+      document.body.style.overflow = 'hidden';
+    }
   });
   
   tl.from(".sideslide h4", {
-    y: 50,  // Animate from slightly below for the headings
-    delay:.4,
+    y: 50, 
+    delay: .4,
     duration: 0.2,
     stagger: 0.2,
     opacity: 0,
@@ -351,11 +354,14 @@ function SideMenubar() {
   tl.pause();
 
   menu.addEventListener("click", function () {
-    tl.play();  // Slide down on menu click
+    tl.play();
   });
   
   cross.addEventListener("click", function () {
-    tl.reverse();  // Slide back up when clicking the close button
+    tl.reverse(); 
+    tl.eventCallback("onReverseComplete", function() {
+      document.body.style.overflow = '';
+    });
   });
 }
 
