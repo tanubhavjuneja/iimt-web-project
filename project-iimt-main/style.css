@@ -127,6 +127,37 @@ nav {
   border-radius: 4px;
   font-size: 1vw;
 }
+.menu i{
+  display: none;
+}
+.sideslide {
+  font-family: bull;
+  z-index: 99;
+  padding: 6vw;
+  position: absolute;
+  top: 0;
+  right: -40%;
+  height: 100vh;
+  width: 40%;
+  background-color: #f9f3eb;
+}
+
+.sideslide h4 {
+  font-size: 5vw;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.sideslide i {
+  color: #333;
+  cursor: pointer;
+  font-size: 2vw;
+  /* background-color: #333; */
+  padding: 2px;
+  top: 4%;
+  right: 10%;
+  position: absolute;
+}
 .center-content {
   padding-top: 10vw;
   font-family: "machina";
@@ -1205,6 +1236,37 @@ footer p {
     padding: 1vw 4vw;
     border-radius: 4px;
     font-size: 3.5vw;
+  }
+  .menu i{
+    display: block;
+  }
+  .sideslide {
+    font-family: bull;
+    z-index: 99;
+    padding: 6vw;
+    position: absolute;
+    top: 0;
+    right: -40%;
+    height: 100vh;
+    width: 40%;
+    background-color: #f9f3eb;
+  }
+  
+  .sideslide h4 {
+    font-size: 5vw;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .sideslide i {
+    color: #333;
+    cursor: pointer;
+    font-size: 2vw;
+    /* background-color: #333; */
+    padding: 2px;
+    top: 4%;
+    right: 10%;
+    position: absolute;
   }
   .center-content {
     padding-top: 0vw;
@@ -2967,7 +3029,7 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
   }
   .navpart2 a {
     display: none;
@@ -2976,11 +3038,16 @@ footer p {
     cursor: pointer;
     border: none;
     color: #ffff;
-    background: #e10000;
+    background-color: #e10000;
     font-family: "machina";
     padding: 1vw 4vw;
     border-radius: 4px;
     font-size: 3.5vw;
+  }
+  .menu i{
+    display: block;
+    font-size: 4vw;
+    margin-right: 1vw;
   }
   .center-content {
     padding-top: 0vw;

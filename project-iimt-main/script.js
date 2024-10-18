@@ -331,4 +331,34 @@ textSplitting();
 scroll();
 wiggleEffect();
 gooeyEffect();
+SideMenubar();
 
+function SideMenubar() {
+  var menu = document.querySelector(".menuicon");
+  var cross = document.querySelector(".sideslide i");
+  var tl = gsap.timeline();
+
+  tl.to(".sideslide", {
+    right: 0,
+    duration: 0.5,
+  });
+  tl.from(".sideslide h4", {
+    x: 100,
+    duration: 0.4,
+    stagger: 0.2,
+    opacity: 0,
+  });
+  tl.from(".sideslide i", {
+    opacity: 0,
+    duration: 0.6,
+    rotate: "360deg",
+  });
+  tl.pause();
+
+  menu.addEventListener("click", function () {
+    tl.play();
+  });
+  cross.addEventListener("click", function () {
+    tl.reverse();
+  });
+}
