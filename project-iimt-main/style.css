@@ -103,6 +103,10 @@ body {
 }
 form{
   text-align: center;
+
+}
+form input{
+  text-align: center;
 }
 .popup-content{
   padding-top: 10vw;
@@ -2716,21 +2720,34 @@ footer p {
     /* background-color: red; */
     /* background-color: #302d2d; */
   }
-
+  .subscribe-section button{
+    margin-top: 2vw;
+  }
   .subscribe-section h1 {
     margin-top: -10vw;
     font-size: 8vw;
   }
   .subscribe-section p {
+    font-family: "helRegular";
     margin-top: -10vw;
+    font-weight: 100;
   }
   .address-section p {
+    font-family: "helRegular";
+    font-weight: 100;
     margin-top: 1.4vw;
   }
   .footer-contact p:nth-child(4) {
     display: none;
   }
+  .footer-left h3{
+    font-family: "helRegular";
+    font-weight: 100;
+  }
   .footer-contact p {
+    font-family: "helRegular";
+    font-weight: 100;
+    font-weight: 100;
     white-space: nowrap;
     font-size: 3.2vw;
     margin-top: -12vw;
@@ -2739,6 +2756,7 @@ footer p {
   .footer-right iframe {
     height: 40vh;
     width: 90vw;
-     padding-bottom: 6vw;
+    padding-top: 6vw;
+    padding-bottom: 16vw;
   }
 }
