@@ -45,6 +45,11 @@ body {
   background-color: #302d2d;
   overflow: hidden;
 }
+.blank{
+  height: 8vw;
+  width: 100%;
+  background-color: #302d2d;
+}
 .popup {
   display: none;
   position: fixed;
@@ -2740,7 +2745,7 @@ footer p {
   .footer-contact p:nth-child(4) {
     display: none;
   }
-  .footer-left h3{
+  .footer-left {
     font-family: "helRegular";
     font-weight: 100;
   }
